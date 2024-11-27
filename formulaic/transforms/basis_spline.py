@@ -124,8 +124,9 @@ def basis_spline(  # pylint: disable=dangerous-default-value  # always replaced 
         )
     if extrapolation is SplineExtrapolation.CLIP:
         x = numpy.clip(x, lower_bound, upper_bound)
-    if extrapolation is SplineExtrapolation.NA:
-        x = numpy.where((x >= lower_bound) & (x <= upper_bound), x, numpy.nan)
+    if extrapolation in (SplineExtrapolation.NA, SplineExtrapolation.ZERO):
+        fill_value = numpy.nan if extrapolation is SplineExtrapolation.NA else 0.0
+        x = numpy.where((x >= lower_bound) & (x <= upper_bound), x, fill_value)
 
     # Prepare knots
     if "knots" not in _state:
