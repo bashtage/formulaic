@@ -4,7 +4,6 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
-
 asttokens==2.4.1
     # via stack-data
 attrs==24.2.0
@@ -209,7 +208,7 @@ tinycss2==1.4.0
     # via nbconvert
 tomli==2.1.0
     # via jupytext
-tornado==6.4.1
+tornado==6.4.2
     # via
     #   ipykernel
     #   jupyter-client
