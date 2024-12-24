@@ -4,7 +4,6 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
-
 asttokens==2.4.1
     # via stack-data
 attrs==24.2.0
@@ -49,7 +48,7 @@ ipython==8.29.0
     # via ipykernel
 jedi==0.19.2
     # via ipython
-jinja2==3.1.4
+jinja2==3.1.5
     # via
     #   mkdocs
     #   mkdocs-material
