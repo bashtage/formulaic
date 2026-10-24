@@ -4,7 +4,6 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
-
 asttokens==2.4.1
     # via stack-data
 attrs==24.2.0
@@ -17,7 +16,7 @@ beautifulsoup4==4.12.3
     # via nbconvert
 bleach==6.2.0
     # via nbconvert
-certifi==2024.8.30
+certifi==2026.10.19
     # via requests
 charset-normalizer==3.4.0
     # via requests
